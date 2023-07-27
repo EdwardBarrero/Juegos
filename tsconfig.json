@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es6",                       // Versión de ECMAScript a la que se compilará el código
+    "module": "commonjs",                  // Sistema de módulos para la compilación
+    "lib": ["es6", "dom"],                 // Librerías disponibles durante la compilación
+    "strict": true,                        // Habilitar estrictas comprobaciones de tipos
+    "esModuleInterop": true,               // Facilita la interoperabilidad con módulos de estilo CommonJS
+    "skipLibCheck": true,                  // Evita la comprobación de tipos para las declaraciones de librerías
+    "forceConsistentCasingInFileNames": true,  // Asegura que los nombres de archivo tengan la misma capitalización
+    "noImplicitReturns": true,             // Informar si alguna función no tiene una declaración de retorno
+    "noUnusedLocals": true,                // Informar si alguna variable local no se utiliza
+    "strictNullChecks": true,              // Habilitar comprobaciones estrictas de nulos y undefined
+    "noImplicitAny": true,                 // Informar sobre tipos implícitos "any"
+    "baseUrl": "./src",                    // Ruta base para resolver módulos
+    "outDir": "./dist",                    // Directorio de salida para los archivos compilados
+    "sourceMap": true                      // Generar archivos de mapa de origen (.map) para facilitar la depuración
+  },
+  "include": [
+    "src/**/*.ts",                          // Patrón que indica qué archivos se deben incluir en la compilación
+    "src/**/*.js"
+  ],
+  "exclude": [
+    "node_modules"                       // Carpeta a excluir de la compilación
+  ]
+}
