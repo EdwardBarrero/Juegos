@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <React.Fragment>
-      <Routes>
+      <Routes>      
         <Route path="/" Component={Home}/>
       </Routes>
     </React.Fragment>

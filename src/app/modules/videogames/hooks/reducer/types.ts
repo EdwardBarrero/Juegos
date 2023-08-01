@@ -1,0 +1,5 @@
+export const TYPES_HOME_REDUCER = {
+  SET_DATA: "SET_DATA",
+  SET_LOADING: "SET_LOADING",
+  SET_PAGE: "SET_PAGE",
+}
