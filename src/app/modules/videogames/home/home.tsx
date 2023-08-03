@@ -6,14 +6,20 @@ import { HomeContext } from "../context/homeContext"
 import { ButtonsPagination } from "./components/ButtonsPagination"
 import { Loading } from "../../global/components"
 import { Navbar } from "../../global/components/Navbar" 
+import { HomeHeader } from "./components/HomeHeader/HomeHeader"
+import { HomeCards } from "./components/HomeCards/HomeCards"
 
 export const Home : FC = () => {
 
   return (
     <>
       <HomeContextProvider>
-        <Navbar />
-        <ButtonsPagination />
+        <div className="bg-dark vh-100">
+          <Navbar />
+          <HomeHeader />
+          <HomeCards />
+          <ButtonsPagination />
+        </div>
         <HomeLoading />
       </HomeContextProvider>
     </>
